@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Tanko Bama</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Restaurant Tanko Bama</h1>
+  
+  <div class="tabs">
+    <button onclick="openTab('accueil')">Accueil</button>
+    <button onclick="openTab('Nos menus')">Nos Menu</button>
+    <button onclick="openTab('a-propos')">Qui sommes-nous</button>
+  </div>
+  
+  <div id="menu" class="tab-content">
+    <h2>Menu des Plats</h2>
+    <div id="menu-items">
+      <!-- Section pour chaque plat -->
+      <div class="menu-item">
+        <h3>Nom du Plat</h3>
+        <p>Description du Plat</p>
+        <p>Prix: Prix du Plat XOF</p>
+        <input type="text" placeholder="Type de Plat">
+        <input type="number" placeholder="Nombre de Plats">
+        <input type="text" placeholder="Adresse de Livraison">
+        <button onclick="passerCommande()">Passer la Commande</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Autres onglets et contenu -->
+</div>
+<script src="script.js"></script>
+</body>
+</html>
